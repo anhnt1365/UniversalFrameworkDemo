@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewController" customModule="NTAFilter" customModuleProvider="target">
+            <connections>
+                <outlet property="originImage" destination="UZv-It-cqZ" id="MJS-D6-5Iv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UZv-It-cqZ">
+                    <rect key="frame" x="50" y="183.5" width="275" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="FN9-eG-vAA"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgx-gy-OCL">
+                    <rect key="frame" x="327" y="28" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2tQ-IL-Cgz"/>
+                        <constraint firstAttribute="width" constant="40" id="TcP-Ds-cgI"/>
+                    </constraints>
+                    <state key="normal" image="cancel.png"/>
+                    <connections>
+                        <action selector="dimissView:" destination="-1" eventType="touchUpInside" id="5cS-l2-Zev"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mgx-gy-OCL" secondAttribute="trailing" constant="8" id="4Pk-S0-xDB"/>
+                <constraint firstItem="UZv-It-cqZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="FPH-YJ-guS"/>
+                <constraint firstItem="UZv-It-cqZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="efL-y4-a4l"/>
+                <constraint firstItem="mgx-gy-OCL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="fzu-Qx-t7m"/>
+                <constraint firstItem="UZv-It-cqZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sPF-ad-vor"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel.png" width="36" height="36"/>
+    </resources>
+</document>

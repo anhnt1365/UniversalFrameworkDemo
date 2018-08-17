@@ -1,0 +1,11 @@
+framework module NTAFilter {
+  umbrella header "NTAFilter.h"
+
+  export *
+  module * { export * }
+}
+
+module NTAFilter.Swift {
+    header "NTAFilter-Swift.h"
+    requires objc
+}
