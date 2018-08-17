@@ -1,3 +1,3 @@
 # UniversalFrameworkDemo
 
-run command "pod install" before run project :)
+Run command "pod install" before run project :)
